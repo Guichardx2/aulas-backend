@@ -36,7 +36,6 @@ public class Exercicio00 {
             String timeEscolhido= times[posicaoAleatoria];
 
             System.out.println("Seja bem vindo " + primeiroNome + segundoNome + numAleatorio + timeEscolhido);
-git pull
         }
     }
 }
