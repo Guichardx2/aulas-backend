@@ -45,11 +45,11 @@ public class exercicio01 {
 
             System.out.println("Qual ambientação você prefere?");
             System.out.println("1- Sci-fi\n" + "2- Medieval");
-            op1= leitor.nextLine();
+            op1= leitor.nextLine(); //ou nextInt
 
             System.out.println("Qual gênero você prefere?");
             System.out.println("1-Comédia\n" + "2- Drama");
-            op2= leitor.nextLine();
+            op2= leitor.nextLine(); //ou nextInt
 
             if (op1.isEmpty() || op2.isEmpty()) return;
 
