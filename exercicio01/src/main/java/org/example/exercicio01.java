@@ -10,6 +10,10 @@ public class exercicio01 {
             String op1;
             String op2;
 
+            Scanner leitor = new Scanner(System.in);
+
+            Random aleatorio= new Random();
+
             // Array de filmes de Sci-fi Drama
             String[] sciFiDrama = {"Interstellar", "Arrival", "Ex Machina", "Her", "2001: Uma Odisseia no Espaço"};
 
@@ -21,8 +25,6 @@ public class exercicio01 {
 
             // Array de filmes Medieval Drama
             String[] medievalDrama = {"Gladiador", "O Último dos Moicanos", "O Nome da Rosa", "Braveheart", "A 13ª Guerreira"};
-
-            Random aleatorio= new Random();
 
             //array de Sci-fi Drama
             int posicaoAleatoriaScifiDrama = aleatorio.nextInt(sciFiDrama.length);
@@ -40,7 +42,6 @@ public class exercicio01 {
             int posicaoAleatoriaMedDrama = aleatorio.nextInt(medievalDrama.length);
             String medDramaEscolhido= medievalDrama[posicaoAleatoriaMedDrama];
 
-            Scanner leitor = new Scanner(System.in);
 
             System.out.println("Qual ambientação você prefere?");
             System.out.println("1- Sci-fi\n" + "2- Medieval");
@@ -53,13 +54,13 @@ public class exercicio01 {
             if (op1.isEmpty() || op2.isEmpty()) return;
 
             if (Objects.equals(op1, "1") && Objects.equals(op2, "1")){
-                System.out.println("Recomendamos este filme para você: "+ sciFiComediaEscolhido);
+                System.out.println(String.format("Recomendamos este filme para você: ", sciFiComediaEscolhido));
             }else if (Objects.equals(op1, "1") && Objects.equals(op2, "2")){
-                System.out.println("Recomendamos este filme para você: "+ scifiDramaEscolhido);
+                System.out.println(String.format("Recomendamos este filme para você: ", scifiDramaEscolhido));
             }else if (Objects.equals(op1, "2") && Objects.equals(op2, "1")){
-                System.out.println("Recomendamos este filme para você: "+ medComediaEscolhido);
+                System.out.println(String.format("Recomendamos este filme para você: ", medComediaEscolhido));
             }else if (Objects.equals(op1, "2") && Objects.equals(op2, "2")){
-                System.out.println("Recomendamos este filme para você: "+ medDramaEscolhido);
+                System.out.println(String.format("Recomendamos este filme para você: ", medDramaEscolhido));
             }
         }
     }
