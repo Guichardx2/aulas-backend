@@ -51,16 +51,18 @@ public class exercicio01 {
             System.out.println("1-Comédia\n" + "2- Drama");
             op2= leitor.nextLine(); //ou nextInt
 
-            if (op1.isEmpty() || op2.isEmpty()) return;
-
-            if (Objects.equals(op1, "1") && Objects.equals(op2, "1")){
-                System.out.println(String.format("Recomendamos este filme para você: ", sciFiComediaEscolhido));
-            }else if (Objects.equals(op1, "1") && Objects.equals(op2, "2")){
-                System.out.println(String.format("Recomendamos este filme para você: ", scifiDramaEscolhido));
-            }else if (Objects.equals(op1, "2") && Objects.equals(op2, "1")){
-                System.out.println(String.format("Recomendamos este filme para você: ", medComediaEscolhido));
-            }else if (Objects.equals(op1, "2") && Objects.equals(op2, "2")){
-                System.out.println(String.format("Recomendamos este filme para você: ", medDramaEscolhido));
+            if (op1.equals("") || op2.equals("")){
+                return;
+            }else{
+                if (Objects.equals(op1, "1") && Objects.equals(op2, "1")){
+                    System.out.printf("Recomendamos este filme para você: %s%n", sciFiComediaEscolhido);
+                }else if (Objects.equals(op1, "1") && Objects.equals(op2, "2")){
+                    System.out.printf("Recomendamos este filme para você: %s%n", scifiDramaEscolhido);
+                }else if (Objects.equals(op1, "2") && Objects.equals(op2, "1")){
+                    System.out.printf("Recomendamos este filme para você: %s%n", medComediaEscolhido);
+                }else if (Objects.equals(op1, "2") && Objects.equals(op2, "2")){
+                    System.out.printf("Recomendamos este filme para você: %s%n", medDramaEscolhido);
+                }
             }
         }
     }
