@@ -4,7 +4,7 @@ import java.util.Objects;
 import java.util.Scanner;
 import java.util.Random;
 
-public class exercicio01 {
+public class Exercicio01 {
     public static void main(String[] args) {
         while(true){
             String op1;
