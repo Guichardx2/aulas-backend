@@ -4,11 +4,11 @@ public class PortoPequeno extends BasePorto{
     @Override
     public void atracarBarco (Barco barco){
         if (barco.tamanho <= 10){
-            for (int i= 0; i < barcosAtracados.length; i++){
-                barcosAtracados[i]= barco.nome;
-            }
+            barcosAtracados.add(barco.nome);
+            System.out.println("Barco " + barco.nome + " chegou ao menor porto!");
         }else{
-            System.out.println("Barco granddeddd de mais para atracar aqui!");
+            System.out.println("Barco " + barco.nome + " é grande de mais para atracar no porto pequeno!");
+            System.out.println("Redirecionando para outro porto!");
         }
     }
 }

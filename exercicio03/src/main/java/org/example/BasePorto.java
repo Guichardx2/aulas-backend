@@ -1,17 +1,15 @@
 package org.example;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BasePorto {
     String nome;
-    String[] barcosAtracados=  new String[5];
+    List<String> barcosAtracados =  new ArrayList<String>();
 
     public void atracarBarco (Barco barco){
-        for (int i= 0; i < barcosAtracados.length; i++){
-            barcosAtracados[i]= barco.nome;
-        }
+        barcosAtracados.add(barco.nome);
     }
     public void desatracarBarco (Barco barco){
-        for (int i= 0; i < barcosAtracados.length; i++){
-            barcosAtracados[i]= null;
-        }
+        barcosAtracados.remove(barco.nome);
     }
 }
