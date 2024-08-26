@@ -5,7 +5,7 @@ public class PortoPequeno extends BasePorto{
     public void atracarBarco (Barco barco){
         if (barco.tamanho <= 10){
             barcosAtracados.add(barco.nome);
-            System.out.println("Barco " + barco.nome + " chegou ao menor porto!");
+            System.out.println("Barco " + barco.nome + " atracou no menor porto!");
         }else{
             System.out.println("Barco " + barco.nome + " é grande de mais para atracar no porto pequeno!");
             System.out.println("Redirecionando para outro porto!");

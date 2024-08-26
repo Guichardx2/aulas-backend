@@ -5,7 +5,7 @@ public class PortoGrande extends BasePorto{
     public void atracarBarco (Barco barco){
         if (barco.tamanho >= 10){
             barcosAtracados.add(barco.nome);
-            System.out.println("Barco " + barco.nome + " chegou ao maior porto!");
+            System.out.println("Barco " + barco.nome + " atracou no maior porto!");
         }
     }
 }
