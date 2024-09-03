@@ -7,9 +7,11 @@ public class BasePorto {
     List<String> barcosAtracados =  new ArrayList<String>();
 
     public void atracarBarco (Barco barco){
+
         barcosAtracados.add(barco.nome);
     }
     public void desatracarBarco (Barco barco){
+
         barcosAtracados.remove(barco.nome);
     }
 }
