@@ -50,7 +50,7 @@ public class Main {
             ingresso.filme = scanner.nextLine();
 
             if (!cinema.filmesDisponiveis.contains(ingresso.filme.toUpperCase())) {
-                throw new Exception("Filme não disponível! Escolha outro por favor...");
+                 throw new IllegalArgumentException("Filme não disponível! Escolha outro por favor...");
             }
 
             System.out.println("Qual a sua idade? ");
@@ -62,27 +62,27 @@ public class Main {
             switch (ingresso.filme.toUpperCase()) {
                 case "VINGADORES":
                     if (cliente.getIdade() < filme1.getIdadeMinima()) {
-                        throw new Exception("Você não tem idade suficiente para assistir a este filme!");
+                        throw new IllegalArgumentException("Você não tem idade suficiente para assistir a este filme!");
                     }
                     break;
                 case "HOMEM ARANHA":
                     if (cliente.getIdade() < filme2.getIdadeMinima()) {
-                        throw new Exception("Você não tem idade suficiente para assistir a este filme!");
+                        throw new IllegalArgumentException("Você não tem idade suficiente para assistir a este filme!");
                     }
                     break;
                 case "BATMAN":
                     if (cliente.getIdade() < filme3.getIdadeMinima()) {
-                        throw new Exception("Você não tem idade suficiente para assistir a este filme!");
+                        throw new IllegalArgumentException("Você não tem idade suficiente para assistir a este filme!");
                     }
                     break;
                 case "SUPERMAN":
                     if (cliente.getIdade() < filme4.getIdadeMinima()) {
-                        throw new Exception("Você não tem idade suficiente para assistir a este filme!");
+                        throw new IllegalArgumentException("Você não tem idade suficiente para assistir a este filme!");
                     }
                     break;
                 case "MULHER MARAVILHA":
                     if (cliente.getIdade() < filme5.getIdadeMinima()) {
-                        throw new Exception("Você não tem idade suficiente para assistir a este filme!");
+                        throw new IllegalArgumentException("Você não tem idade suficiente para assistir a este filme!");
                     }
                     break;
                 default:
@@ -97,7 +97,7 @@ public class Main {
                 cinema.adicionarIngresso(ingresso.assento);
                 System.out.println("Ingresso vendido com sucesso! " + ingresso.filme + " - " + ingresso.assento + " - " + ingresso.cliente);
             }else {
-                throw new Exception("Assento já ocupado! Escolha outro por favor...");
+                throw new IllegalArgumentException("Assento já ocupado! Escolha outro por favor...");
             }
         }
     }
