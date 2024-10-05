@@ -1,0 +1,10 @@
+- Daniel Dalalama destacou a importância do conhecimento de négócios versus o uso de soluções prontas e automatizadas. Cite pelo menos uma solução de segurança usada em sistemas web de backend e justifique o porquê da possibilidade de não ser efetiva contra todos os tipos de ameaças?
+
+R: Considerando o conteúdo da palestra, recursos como 2FA, Controle de acesso, criptografia, backup e etc, são comumente usados na segurança de aplicações. Entretanto, por que não são 100% efetivas contra todos os tipos de ataque? Partimos do princípio que brechas podem estar em qualquer lugar, nunca algo estará, de fato, 100% seguro. Além disso, foi explicado na palestra que as soluções são para o negócio e não para UM tipo de negócio apenas, novos movimentos permitem uma infinidade de novas brechas e ataques. O ideal é saber, dentro do modelo de negócio, o que realmente é preciso para a sua segurança. 
+
+O meio cibernético evolui tão rápido como qualquer outro, sempre criando novas técnica, obrigando a não contar somente com a solução pronta, mas também como código limpo e seguro.
+
+
+- Mateus Buogo destacou a importância de pensar em segurança no desenvolvimento das aplicações. Cite pelo menos duas tecnologias que podem ser utilizadas para proteger sistemas de backend contra ataques cibernéticos.
+
+R: Mateus cita o uso de APIs de segurança que são capazes de varrer o código em busca de brechas, artefatos e vulnerabilidades, além de monitoramento e código seguro, pois a maior parte dos erros está em quem desenvolve o código.
