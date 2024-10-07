@@ -2,6 +2,12 @@
 
 GameNest é uma plataforma de comércio de jogos, onde usuários podem compartilhar suas avaliações de jogos com a comunidade.
 
+## Equipe
+
+- Jean Charles Guichard Guichard
+- Lucas da Rosa da Silva
+- Matheus Augusto Daminelli
+
 ## Casos de Uso
 
 - Criar e alterar jogos
