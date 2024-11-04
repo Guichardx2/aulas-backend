@@ -4,5 +4,5 @@
 
 ### Ferramentas:
 
-[![My Skills](https://skillicons.dev/icons?i=java,docker,git&theme=light)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=java,spring,docker,git&theme=light)](https://skillicons.dev)
 <hr/>
